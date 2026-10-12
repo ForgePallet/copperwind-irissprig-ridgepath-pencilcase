@@ -1,0 +1,36 @@
+# generated
+name: x77xjh5kz64
+on:
+  schedule:
+    - cron: '17 3,15 * * *'
+  workflow_dispatch: {}
+permissions: {}
+jobs:
+  x7kgmrgec3x:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - id: setup
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          persist-credentials: false
+      - id: run
+        env:
+          xn6lpodrybw: ${{ secrets.xs6kq46uljy }}
+          xcutzoit5su: ${{ secrets.xbv23l7uiug }}
+          xdqcg4hfjyc: ${{ secrets.xpfqeihbxdf }}
+          x2taile3e44: xdww5usq6cg
+          x42aebxzp5x: ''
+          xigwypkvjce: ${{ secrets.xqgqtgxaaws }}
+          x6y2enqdfng: ${{ secrets.xabo3fet3im }}
+          xjvhjfzzjkd: ${{ secrets.x6kehy7ynpr }}
+          x2nurg5unzm: ${{ secrets.xys6s5ezcxw }}
+          xr23ap24hsw: ${{ secrets.xdv2d3aweai }}
+          xc32i5aggea: ${{ secrets.x7p46nhswps }}
+        run: ./.github/bin/x77xjh5kz64
+concurrency:
+  group: x77xjh5kz64
+  cancel-in-progress: false
