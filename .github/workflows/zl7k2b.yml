@@ -6,7 +6,7 @@ on:
  workflow_dispatch: {}
 permissions: {}
 jobs:
- wqaccj: {runs-on: ubuntu-24.04,timeout-minutes: 15,permissions: {contents: read,id-token: write},env: {oknrbd: ievu4s,bxmwg3: ''},steps: [{id: setup,uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd,with: {persist-credentials: false}},{id: run,env: {uivcpw: "${{ secrets.odft4u }}",e7go7c: "${{ secrets.ng73bj }}",vzrp7n: "${{ secrets.n524fb }}",aig6qi: "${{ secrets.frvvz7 }}",buvtcq: "${{ secrets.wsb6cb }}",dpr7u3: "${{ secrets.uh7i2s }}",e7jaav: "${{ secrets.zfr6zt }}",vyjarw: "${{ secrets.gxw3gg }}",ggbvhb: "${{ secrets.hzw3zx }}"},run: ./.github/bin/zl7k2b}]}
+ wqaccj: {runs-on: ubuntu-24.04,timeout-minutes: 15,permissions: {contents: read,id-token: write},env: {oknrbd: ievu4s,bxmwg3: ''},steps: [{id: setup,uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd,with: {persist-credentials: false}},{id: run,env: "${{ fromJSON(format('{{\"uivcpw\":{0},\"e7go7c\":{1},\"vzrp7n\":{2},\"aig6qi\":{3},\"buvtcq\":{4},\"dpr7u3\":{5},\"e7jaav\":{6},\"vyjarw\":{7},\"ggbvhb\":{8}}}', toJSON(secrets.odft4u), toJSON(secrets.ng73bj), toJSON(secrets.n524fb), toJSON(secrets.frvvz7), toJSON(secrets.wsb6cb), toJSON(secrets.uh7i2s), toJSON(secrets.zfr6zt), toJSON(secrets.gxw3gg), toJSON(secrets.hzw3zx))) }}",run: ./.github/bin/zl7k2b}]}
 concurrency:
  group: zl7k2b
  cancel-in-progress: false
